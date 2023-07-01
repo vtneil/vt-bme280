@@ -1,0 +1,30 @@
+{
+    "name": "vt-bme280",
+    "version": "1.0.0",
+    "description": "VT BME280 I2C",
+    "keywords": "bme280, i2c, arduino",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vtneil/vt-bme280.git"
+    },
+    "authors": [
+        {
+            "name": "Vivatsathorn Thitasirivit",
+            "email": "vivatsathorn@outlook.co.th",
+            "url": "https://vt.in.th/contacts",
+            "maintainer": true
+        }
+    ],
+    "license": "MIT",
+    "frameworks": "arduino",
+    "platforms": "*",
+    "export": {
+        "include": [
+            "examples/*",
+            "include/*",
+            "test/*",
+            "README.md",
+            "LICENSE"
+        ]
+    }
+}
