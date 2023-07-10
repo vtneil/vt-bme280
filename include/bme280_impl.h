@@ -83,7 +83,7 @@ namespace vt {
         int8_t dig_H6;
     };
 
-    enum bme280_mode_e {
+    enum class bme280_mode_e : uint8_t {
         SLEEP = 0b00,
         FORCED = 0b01,
         NORMAL = 0b11
