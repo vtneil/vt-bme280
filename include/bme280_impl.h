@@ -170,7 +170,7 @@ namespace vt {
         void set_mode(enum bme280_mode_e mode) {
             uint8_t controlData = read_register(BME280_CTRL_MEAS_REG);
             controlData &= ~((1 << 1) | (1 << 0)); //Clear the mode[1:0] bits
-            controlData |= mode; //Set
+            controlData |= static_cast<uint8_t>(mode); //Set
             write_register(BME280_CTRL_MEAS_REG, controlData);
         }
 
